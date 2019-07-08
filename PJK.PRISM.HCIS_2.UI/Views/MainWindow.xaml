@@ -1,0 +1,60 @@
+﻿<Window x:Class="PJK.PRISM.HCIS_2.UI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:views="clr-namespace:PJK.PRISM.HCIS_2.UI.Views"
+        xmlns:viewModel="clr-namespace:PJK.PRISM.HCIS_2.UI.ViewModels"         
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="700" Width="1000" ResizeMode="CanResize" 
+        WindowStartupLocation="CenterScreen" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <GridSplitter Grid.RowSpan="4" Grid.Column="1" Background="#333333" Width="3"/>
+
+        <ContentControl prism:RegionManager.RegionName="NavigationRegion" Grid.Row="2" Grid.Column="0" Margin="0,0,3,0"  />
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" Grid.Row="2" Grid.Column="2" Margin="0,0,3,0" />
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
+            <Menu>
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <DockPanel HorizontalAlignment="Stretch"/>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem Header="File">
+                    <MenuItem Header="New"/>
+                    <Separator/>
+                    <MenuItem Header="Exit" Command="{Binding ExitSystemCommand}"/>
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Controls" Command="{Binding NavigateCommand}" CommandParameter="controls"/>
+                    <MenuItem Header="Stock" Command="{Binding NavigateCommand}" CommandParameter="stock"/>
+                    <MenuItem Header="Projects" Command="{Binding NavigateCommand}" CommandParameter="projects"/>
+                    <MenuItem Header="Projects Old" Command="{Binding NavigateCommand}" CommandParameter="projectsOld"/>
+                    <MenuItem Header="About" Command="{Binding ShowAboutCommand}"/>
+                </MenuItem>
+                <!--<MenuItem Header="Help" IsEnabled="False" HorizontalAlignment="Right" />-->
+            </Menu>
+        </StackPanel>
+
+        <views:RibbonMain Grid.Row="1" Grid.ColumnSpan="3" />
+
+        <StatusBar Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+            <StatusBarItem Content="{Binding StatusBarMessage}" Margin="10,0,10,0"/>
+            <StatusBarItem HorizontalAlignment="Right" IsEnabled="False" Content="MDSAS" Margin="10,0,10,0"/>
+        </StatusBar>
+
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.UI", "PJK.PRISM.HCIS_2.UI\PJK.PRISM.HCIS_2.UI.csproj", "{08EF275A-66C3-4590-B5C2-D6A2167FEBAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS2.Module.PatientManager", "PJK.PRISM.HCIS2.Module.PatientManager\PJK.PRISM.HCIS2.Module.PatientManager.csproj", "{C4952073-7243-403A-8E1C-23EFC5828E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.DAL", "PJK.PRISM.HCIS_2.DAL\PJK.PRISM.HCIS_2.DAL.csproj", "{EAA0C9F0-61CA-473C-8802-1D4961D8439E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.Model", "PJK.PRISM.HCIS_2.Model\PJK.PRISM.HCIS_2.Model.csproj", "{C37A17F6-01A6-4C65-9036-6F79715C74A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08EF275A-66C3-4590-B5C2-D6A2167FEBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EF275A-66C3-4590-B5C2-D6A2167FEBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EF275A-66C3-4590-B5C2-D6A2167FEBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EF275A-66C3-4590-B5C2-D6A2167FEBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4952073-7243-403A-8E1C-23EFC5828E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4952073-7243-403A-8E1C-23EFC5828E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4952073-7243-403A-8E1C-23EFC5828E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4952073-7243-403A-8E1C-23EFC5828E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA0C9F0-61CA-473C-8802-1D4961D8439E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA0C9F0-61CA-473C-8802-1D4961D8439E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA0C9F0-61CA-473C-8802-1D4961D8439E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA0C9F0-61CA-473C-8802-1D4961D8439E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A6A875-FA26-400A-85AD-AA810B3759B5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿<Window x:Class="PJK.PRISM.HCIS_2.UI.Views.Splash"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True"
+                Title="{Binding Title}" Height="500 " Width="300" WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" AllowsTransparency="True" Topmost="True" ResizeMode="NoResize" Background="Transparent"
+        ShowInTaskbar="True" Icon="/PJK.PRISM.HCIS_2.UI;component/Images/Icon48.png" ContentRendered="Window_ContentRendered">
+
+    <StackPanel>
+        <Image Source="/PJK.PRISM.HCIS_2.UI;component/Images/HCIS_Logo_Shiny_T_500.png" Height="250" />
+        <ProgressBar Minimum="0" Maximum="60"  Width="280" Height="1" Value="60" Name="pbStatus"></ProgressBar>
+        <Label Width="280" Content="{Binding SplashMessage}" HorizontalContentAlignment="Center"  Background="#FF333333" Foreground="#FFFFFFFF" />
+    </StackPanel>
+</Window>
