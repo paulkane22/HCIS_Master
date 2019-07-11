@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace PJK.PRISM.HCIS_2.DAL
 {
-    class HCISContext : DbContext
+    public class HCISContext : DbContext
     {
-        public HCISContext() : base("HCIS_DB")
+        public HCISContext() : base("PAUL_DB")
         {
         }
 

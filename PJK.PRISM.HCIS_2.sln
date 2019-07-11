@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.DAL", "PJK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.Model", "PJK.PRISM.HCIS_2.Model\PJK.PRISM.HCIS_2.Model.csproj", "{C37A17F6-01A6-4C65-9036-6F79715C74A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJK.PRISM.HCIS_2.TestDB", "PJK.PRISM.HCIS_2.TestDB\PJK.PRISM.HCIS_2.TestDB.csproj", "{F981E605-CE8F-4199-A7C1-F26EDEB7978E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C37A17F6-01A6-4C65-9036-6F79715C74A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F981E605-CE8F-4199-A7C1-F26EDEB7978E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F981E605-CE8F-4199-A7C1-F26EDEB7978E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F981E605-CE8F-4199-A7C1-F26EDEB7978E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F981E605-CE8F-4199-A7C1-F26EDEB7978E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
