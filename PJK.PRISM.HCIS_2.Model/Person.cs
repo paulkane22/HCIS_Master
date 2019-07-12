@@ -9,6 +9,13 @@ namespace PJK.PRISM.HCIS_2.Model
 {
     public class Person
     {
+        public Person()
+        {
+            LeaveItems = new List<Leave>();
+        }
+
+
+
         [Key]
         public int Id { get; set; }
         public string Surname { get; set; }
@@ -16,5 +23,10 @@ namespace PJK.PRISM.HCIS_2.Model
         public int NoOfDaysLeft { get; set; }
 
         public List<Leave> LeaveItems { get; set; }
+
+
+
+
+
     }
 }

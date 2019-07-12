@@ -6,7 +6,7 @@ namespace PJK.PRISM.HCIS_2.DAL
 {
     public class HCISContext : DbContext
     {
-        public HCISContext() : base("PAUL_DB")
+        public HCISContext() : base("HCIS_DB")
         {
         }
 
